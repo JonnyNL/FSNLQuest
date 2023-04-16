@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inputfield {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 240px;
+  height: 36px;
+}
+
+.logbutton {
+  width: 349px;
+  height: 79px;
+  background-color: #ffffff33;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logbutton:hover {
+  background-color: #ffffff85;
+  color: #00000075;
+}
+
+.logbutton:hover span {
+  background-color: #ffffff65;
+}
+
+.logbuttonC {
+  width: 189px;
+  height: 59px;
+  background-color: #ff000033;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff75;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logbuttonC:hover {
+  background-color: #ff000062;
+  color: #ffffff;
+}
+
+.logbuttonC:hover span {
+  background-color: #ffffff65;
+}
+
+.links {
+  color: #ffffff;
+  font-size: 14px;
+}

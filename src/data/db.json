@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "userName": "Admin",
+      "passWord": "123",
+      "fName": "admin",
+      "lName": "admin",
+      "areaCode": "123123",
+      "gender": "other",
+      "profileIMG": "",
+      "questscompleted": 0,
+      "questscreated": 3,
+      "rewards": [],
+      "id": 1
+    }
+  ],
+  "currentUser": {
+    "userName": "Admin",
+    "fName": "admin",
+    "lName": "admin",
+    "gender": "other",
+    "questscompleted": 0,
+    "questscreated": 3,
+    "rewards": [],
+    "passWord": "123",
+    "areaCode": "123123",
+    "profileIMG": "",
+    "id": 1
+  },
+  "quests": [
+    {
+      "id": 1,
+      "title": "Blueberry Pluckin'",
+      "description": "Pick a couple of pints of blueberries for some fresh jam!",
+      "thumbnail": "/thumbnails/bluebush.jpg",
+      "sDate": "",
+      "eDate": "",
+      "steps": [
+        "Go to the your nearest blueberry pickin spot, take a photo with friends",
+        "Take a picture of your bucket of blueberries",
+        "Take selfie with LestersFarm clerk & Jam"
+      ],
+      "reward": "Fresh Jam"
+    },
+    {
+      "id": 2,
+      "title": "Clean St.John's!",
+      "description": "Fill a trash bag and return it to the recycling plant",
+      "thumbnail": "/thumbnails/trash.png",
+      "sDate": "",
+      "eDate": "",
+      "steps": [
+        "Go to the your nearest park or just around your community with trash bags",
+        "Pick up enough trash to fill bag",
+        "Take a selfie with you and the trash bag"
+      ],
+      "reward": "$20"
+    },
+    {
+      "id": 3,
+      "title": "Catch me a Trout",
+      "description": "I hurt me had n needs someone ta get me a fish by",
+      "thumbnail": "/thumbnails/fish.jpg",
+      "sDate": "",
+      "eDate": "",
+      "steps": [
+        "Drop by 37. newfie dr. to get the fishing gear",
+        "I usually go to this lake, take pic of it when you get there",
+        "Store fish in cooler with ice keep it alive pls"
+      ],
+      "reward": "$40"
+    },
+    {
+      "id": 4,
+      "title": "Depression Beater",
+      "description": "Destroy Alex's depression with nuclear weaponry",
+      "thumbnail": "/thumbnails/alex",
+      "sDate": "",
+      "eDate": "",
+      "steps": [
+        "Example Step 1",
+        "Example Step 2",
+        "Example Step 3"
+      ],
+      "reward": "Glug glug 3000"
+    },
+    {
+      "id": 5,
+      "title": "Ant Exterminator",
+      "description": "Get rid of the ants in my yard",
+      "thumbnail": "/thumbnails/ants.jpg",
+      "sDate": "2023-10-10",
+      "eDate": "",
+      "steps": [
+        "Go to my address at address",
+        "Knock on side door",
+        "Exterminate"
+      ],
+      "reward": "Greco Coupon"
+    },
+    {
+      "id": 6,
+      "title": "McBooger Burger",
+      "description": "Try McDonald's newest burger!",
+      "thumbnail": "/thumbnails/McBooger.jpg",
+      "sDate": "2069-12-25",
+      "eDate": "",
+      "steps": [
+        "Go to your nearest participating McDickies",
+        "Show the employee this quest",
+        "Buy McBoogar"
+      ],
+      "reward": "Next Meal Free Coupon"
+    },
+    {
+      "title": "Testing Quest",
+      "description": "taste it?",
+      "thumbnail": {},
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": "2022-05-25",
+      "endDate": "2022-05-26",
+      "steps": [
+        "test",
+        "test",
+        "and more test",
+        "test again",
+        "And once more"
+      ],
+      "reward": "my donger",
+      "id": 7
+    },
+    {
+      "title": "test2",
+      "description": "test2",
+      "thumbnail": {},
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "test2",
+        "test2",
+        "test2"
+      ],
+      "reward": "test2",
+      "id": 8
+    },
+    {
+      "title": "test3",
+      "description": "aasdasdad",
+      "thumbnail": {},
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "test3",
+        "test3",
+        "test3"
+      ],
+      "reward": "mandingo",
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "title": "Tylers Stuck",
+      "description": "Help Free Tyler",
+      "thumbnail": {},
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Bend over and spell out run 5 times",
+        "stand back up and pat yourself on the back",
+        "now youre gay"
+      ],
+      "reward": "hehehoohoo",
+      "id": 11
+    }
+  ]
+}

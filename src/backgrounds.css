@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
+
+.sibackground {
+  display: flex;
+  background-image: url(./site-images/fLogin.png);
+  background-size: cover;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.lbackground {
+  background-image: url(./site-images/lbackground.png);
+  background-size: 100%;
+  margin: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.cBackground {
+  display: flex;
+  background-image: url(./site-images/cBackground.png);
+  background-size: cover;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lTitle {
+  font-family: "Spectral", serif;
+  color: rgba(0, 0, 0, 0.301);
+  font-size: 48px;
+
+  animation: glowing 5s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0%,
+  100% {
+    text-shadow: 0 0 3px #bbbbbb, 0 0 5px #fff, 0 0 7px #ffffff7c,
+      0 0 10px #ffffff;
+  }
+  25%,
+  75% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff7c,
+      0 0 20px #ffffff7c;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff7c,
+      0 0 40px #ffffff7c;
+  }
+}
+
+.lTitle2 {
+  font-family: "BioRhyme", serif;
+  color: rgba(216, 208, 208, 0.8); /* Increase opacity */
+  font-size: 1.75em;
+  animation: glowing 8s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0%,
+  100% {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 7px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  25%,
+  75% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(255, 255, 255, 0.5),
+      0 0 40px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.fsloppy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regbackground {
+  display: flex;
+  background-image: url(./site-images/RegisterBackground.png.jpg);
+  background-size: cover;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #00000040;
+  background: rgba(0, 0, 0, 0.25);
+  align-items: center;
+  width: 546px;
+  height: auto;
+  border: 1px solid rgba(216, 216, 216, 0.5);
+  backdrop-filter: blur(2px);
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.boxtwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 16px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #00000040;
+  width: 600px;
+  height: auto;
+  border: 1px solid rgba(216, 216, 216, 0.5);
+  backdrop-filter: blur(2px);
+  padding: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-group button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #48bb78;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-group button:hover {
+  background-color: #38a169;
+}
+
+.form-group .error {
+  color: red;
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group-column {
+  flex: 1;
+  margin: 0 10px; /* Add some margin between the columns */
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between; /* Add this rule to evenly distribute the space between the columns */
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.form-group .inputfield.input-error {
+  border: 1px solid red;
+}
+
+.form-group .inputfield.input-success {
+  border: 1px solid green;
+}

@@ -1,0 +1,41 @@
+.upcomingquests {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftupcoming {
+  background-color: #00000035;
+  width: 700px;
+  height: 300px;
+}
+
+.lefttoprow {
+  background-color: #ffffff55;
+  width: 700px;
+  height: 50px;
+}
+
+.rightupcoming {
+  background-color: #00000035;
+  margin-left: 10px;
+  width: 700px;
+  height: 300px;
+}
+
+.righttoprow {
+  background-color: #ffffff55;
+  width: 700px;
+  height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .upcomingquests {
+    flex-direction: column;
+  }
+  .leftupcoming {
+    display: none;
+  }
+  .rightupcoming {
+    margin: 0 auto;
+  }
+}

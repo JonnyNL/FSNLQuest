@@ -1,0 +1,124 @@
+.usermadequests {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftuser {
+  background-color: #00000035;
+  width: 350px;
+  height: 250px;
+  flex-direction: column;
+  border-radius: 16px 16px 0px 0px;
+}
+.topleft {
+  background-color: #ffffff55;
+  position: relative;
+  width: 350px;
+  height: 40px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.bottomleft {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 350px;
+  height: 30px;
+  top: calc(15 - 8px);
+  margin-top: -10px;
+}
+
+.roundleft {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 330px;
+  height: 20px;
+  margin-top: 170px;
+  margin-left: 0.65em;
+  border-radius: 16px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.middleuser {
+  background-color: #00000035;
+  width: 350px;
+  height: 250px;
+  margin-left: 70px;
+  flex-direction: column;
+  border-radius: 16px 16px 0px 0px;
+}
+.topmiddle {
+  background-color: #ffffff55;
+  position: relative;
+  width: 350px;
+  height: 40px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.bottommiddle {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 350px;
+  height: 30px;
+  top: calc(15 - 8px);
+  margin-top: -10px;
+}
+
+.roundmiddle {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 330px;
+  height: 20px;
+  margin-top: 170px;
+  margin-left: 0.65em;
+  border-radius: 16px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rightuser {
+  background-color: #00000035;
+  width: 350px;
+  height: 250px;
+  margin-left: 70px;
+  flex-direction: column;
+  border-radius: 16px 16px 0px 0px;
+}
+.topright {
+  background-color: #ffffff55;
+  position: relative;
+  width: 350px;
+  height: 40px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.bottomright {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 350px;
+  height: 30px;
+  top: calc(15 - 8px);
+  margin-top: -10px;
+}
+
+.roundright {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 330px;
+  height: 20px;
+  margin-top: 170px;
+  margin-left: 0.65em;
+  border-radius: 16px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .userquests {
+    flex-direction: column;
+  }
+  .leftuser,
+  .rightuser {
+    display: none;
+  }
+  .middleuser {
+    margin: 0 auto;
+  }
+}
