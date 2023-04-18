@@ -1,13 +1,15 @@
 # To Launch NL Quest
 
-#1. npm install
+# 1. npm install
 
-#2. npm run dev
+# 2. npm run dev
 
-#3. If Create An Account or Sign In doesn't work reload app
+# 3. If Create An Account or Sign In doesn't work reload app
 
-**Temporary placeholder images**
-Ukraine
+# Temporary placeholder images
+
+# Ukraine
+
 Photo by "https://unsplash.com/@ykhomi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yurii Khomitskyi on "https://unsplash.com/s/photos/Ukraine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 
 Food Delivery
@@ -40,13 +42,14 @@ Photo by "https://unsplash.com/@alexas_fotos?utm_source=unsplash&utm_medium=refe
 Beardy Nanny
 Photo by "https://unsplash.com/de/@mills_digital_imaging?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adam Mills on "https://unsplash.com/photos/F3a24w6yWnI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"Unsplash
 
-**Testing Accounts**
-Username: Creatanator
-Password: create
+# **Testing Accounts**
 
-# Purpose for this account is to show the functionality of the stats menu for created quests, and showcase the deletion of quests.
+**Username: Creatanator**
+**Password: create**
 
-**Functionalities**
+Purpose for this account is to show the functionality of the stats menu for created quests, and showcase the deletion of quests.
+
+# **Functionalities**
 
 # Login Screen
 

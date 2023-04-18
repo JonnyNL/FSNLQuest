@@ -39,7 +39,8 @@
       "profileIMG": "",
       "id": 2,
       "acceptedQuests": [
-        4
+        4,
+        21
       ]
     },
     {
@@ -59,14 +60,16 @@
         18,
         19,
         20,
-        21
+        21,
+        22
       ],
       "rewards": [],
       "passWord": "create",
       "areaCode": "A1A1A1",
       "profileIMG": "",
       "acceptedQuests": [
-        1
+        1,
+        10
       ],
       "id": 3
     }
@@ -88,14 +91,16 @@
       18,
       19,
       20,
-      21
+      21,
+      22
     ],
     "rewards": [],
     "passWord": "create",
     "areaCode": "A1A1A1",
     "profileIMG": "",
     "acceptedQuests": [
-      1
+      1,
+      10
     ],
     "id": 3
   },
