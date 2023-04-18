@@ -153,7 +153,7 @@
   vertical-align: middle;
   top: -15px;
   color: rgb(255, 255, 255);
-  animation: shimmer 2s infinite;
+  animation: glowing 2s infinite;
   font-size: 1.45em;
 }
 
@@ -169,4 +169,34 @@
       0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
       0 0 40px rgba(255, 255, 255, 0.8);
   }
+}
+
+button {
+  border-radius: 16px;
+  font-family: "Cinzel";
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+button.yourQuest,
+button.viewSteps {
+  background-color: rgba(107, 168, 163, 0.644);
+}
+
+button.yourQuest:hover,
+button.viewSteps:hover {
+  background-color: rgba(122, 221, 213, 0.89);
+}
+
+button.acceptQuest {
+  background-color: transparent;
+  border: 2px solid #5cb85c;
+  color: #5cb85c;
+}
+
+button.acceptQuest:hover {
+  background-color: #5cb85c;
+  color: #fff;
 }

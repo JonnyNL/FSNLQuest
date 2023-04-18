@@ -66,10 +66,38 @@ const QuestForm = ({ onThumbnailChange, onSubmit }) => {
 
     if (postResponse.ok) {
       // Successfully posted the new quest
-      alert(
-        "Quest created successfully! **Note: The added thumbnail won't appear due to current skill issues, will be future update :)**"
+      const createdQuest = await postResponse.json();
+
+      // Update currentUser.questscreated array
+      currentUser.questscreated.push(createdQuest.id);
+      await fetch(`http://localhost:5000/currentUser`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(currentUser),
+      });
+
+      // Update logged-in user's questscreated array in users
+      const userResponse = await fetch(
+        `http://localhost:5000/users/${currentUser.id}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ questscreated: currentUser.questscreated }),
+        }
       );
-      navigate("/landing");
+
+      if (userResponse.ok) {
+        alert(
+          "Quest created successfully! **Note: The added thumbnail won't appear due to current skill issues, will be future update :)**"
+        );
+        navigate("/landing");
+      } else {
+        alert("Failed to update the user's questscreated.");
+      }
     } else {
       // Handle any errors that occurred while posting the new quest
       alert("Failed to create the quest.");
@@ -101,7 +129,6 @@ const QuestForm = ({ onThumbnailChange, onSubmit }) => {
               accept="image/*"
               className="thumbnail-input"
               onChange={(e) => setThumbnail(e.target.files[0])}
-              required
             />
             <span className="camera-icon" role="img" aria-label="camera">
               📷

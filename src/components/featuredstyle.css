@@ -240,7 +240,7 @@
 .quest-description {
   background-color: rgba(255, 255, 255, 0.356);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -302,6 +302,13 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.quest-button.view-steps-button {
-  background-color: rgba(0, 0, 255, 0.5); /* semi-transparent blue */
+.quest-button.view-steps-button,
+.quest-button.your-quest-button {
+  background-color: rgba(107, 168, 163, 0.644); /* semi-transparent blue */
+  font-size: 0.55em;
+}
+
+.quest-button.view-steps-button:hover,
+.quest-button.your-quest-button:hover {
+  background-color: rgba(122, 221, 213, 0.89);
 }

@@ -20,6 +20,7 @@ const RegisterForm = ({ users, addUser }) => {
   const [fieldError, setFieldError] = useState({});
   const [fieldSuccess, setFieldSuccess] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [postalCodeError, setPostalCodeError] = useState(false);
 
   const navigate = useNavigate();
   // Check that all fields have been filled in
@@ -53,6 +54,15 @@ const RegisterForm = ({ users, addUser }) => {
     }
     // Set the fieldError state variable to the errors object
     setFieldError(errors);
+    // Check if postal code is that of newfoundland origin
+    const postalCodePattern = /^[A][0-9][A-Z]\s?[0-9][A-Z][0-9]$/i;
+    if (!postalCodePattern.test(areaCode)) {
+      errors.areaCode = true;
+      setPostalCodeError(true);
+      isValid = false;
+    } else {
+      setPostalCodeError(false);
+    }
     // If the form is not valid, display an error message and return false
     if (!isValid) {
       setError("Please fill in all the fields.");
@@ -190,6 +200,11 @@ const RegisterForm = ({ users, addUser }) => {
           value={areaCode}
           onChange={(e) => setAreaCode(e.target.value)}
         />
+        {postalCodeError && (
+          <div className="error">
+            Invalid Postal Code, website is for Newfoundland residents only
+          </div>
+        )}
       </div>
       <div
         style={{

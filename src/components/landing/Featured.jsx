@@ -8,6 +8,7 @@ const Featured = () => {
   // Using the useState hook to manage state
   const [quests, setQuests] = useState([]);
   const [acceptedQuests, setAcceptedQuests] = useState(new Set());
+  const [createdQuests, setCreatedQuests] = useState([]);
   const navigate = useNavigate();
 
   // Using the useEffect hook to fetch quests from the server and rotate them every 10 seconds
@@ -22,6 +23,7 @@ const Featured = () => {
       );
       const currentUser = await currentUserResponse.json();
       setAcceptedQuests(new Set(currentUser.acceptedQuests));
+      setCreatedQuests(currentUser.questscreated);
     };
 
     fetchQuests();
@@ -65,17 +67,23 @@ const Featured = () => {
     const questClass = ["leftquest", "middlequest", "rightquest"];
 
     // Defining some variables based on whether the user has accepted the quest or not
-    const buttonText = acceptedQuests.has(quest.id)
-      ? "View Steps"
-      : "Accept Quest";
+    let buttonText;
+    let buttonClass;
+    let handleButtonClick;
 
-    const buttonClass = acceptedQuests.has(quest.id)
-      ? "view-steps-button"
-      : "accept-quest-button";
-
-    // Function to handle the button click
-    const handleButtonClick = async (quest) => {
-      if (!acceptedQuests.has(quest.id)) {
+    if (acceptedQuests.has(quest.id)) {
+      buttonText = "View Steps";
+      buttonClass = "view-steps-button";
+      handleButtonClick = () =>
+        navigate("/steps", { state: { questId: quest.id } });
+    } else if (createdQuests.includes(quest.id)) {
+      buttonText = "Your Quest";
+      buttonClass = "your-quest-button";
+      handleButtonClick = () => navigate("/yourquests");
+    } else {
+      buttonText = "Accept Quest";
+      buttonClass = "accept-quest-button";
+      handleButtonClick = async () => {
         // Update the local state
         setAcceptedQuests((prevAcceptedQuests) => {
           const newAcceptedQuests = new Set(prevAcceptedQuests);
@@ -112,10 +120,9 @@ const Featured = () => {
           },
           body: JSON.stringify(updatedUserData),
         });
-      } else {
-        navigate("/steps", { state: { questId: quest.id } });
-      }
-    };
+      };
+    }
+
     return (
       <div key={index} className={questClass[index]}>
         <div className={topRowClass[index]}>{quest.title}</div>
@@ -128,7 +135,7 @@ const Featured = () => {
           <div className="quest-description">
             {quest.description}
             <button
-              onClick={() => handleButtonClick(quest)}
+              onClick={handleButtonClick}
               className={`quest-button ${buttonClass}`}
             >
               {buttonText}

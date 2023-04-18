@@ -78,6 +78,16 @@ const UserMade = () => {
       return questAccepted ? "View Steps" : "Accept Quest";
     };
 
+    const getButtonClass = () => {
+      if (isQuestCreatedByCurrentUser || getButtonLabel() === "View Steps") {
+        return "yourQuest";
+      }
+      if (getButtonLabel() === "Accept Quest") {
+        return "acceptQuest";
+      }
+      return "";
+    };
+
     const handleQuestButtonClick = () => {
       if (isQuestCreatedByCurrentUser) {
         navigate("/yourquests");
@@ -109,6 +119,7 @@ const UserMade = () => {
             <button
               onClick={handleQuestButtonClick}
               disabled={!isQuestAvailable && !isQuestCreatedByCurrentUser}
+              className={getButtonClass()}
             >
               {getButtonLabel()}
             </button>
