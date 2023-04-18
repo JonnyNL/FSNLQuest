@@ -1,6 +1,7 @@
+// Author: Jonathan Ivany 2023/04/10
+
+// Import required libraries and components
 import React, { useState } from "react";
-import Landing from "../components/Landing";
-import Register from "../components/Register";
 import Logo from "../site-images/NLQuestLogo.png";
 import "../backgrounds.css";
 import "../fonts.css";

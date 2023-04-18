@@ -2,173 +2,154 @@
   "users": [
     {
       "userName": "Admin",
-      "passWord": "123",
       "fName": "admin",
       "lName": "admin",
-      "areaCode": "123123",
       "gender": "other",
-      "profileIMG": "",
       "questscompleted": 0,
       "questscreated": 3,
       "rewards": [],
-      "id": 1
+      "passWord": "123",
+      "areaCode": "123123",
+      "profileIMG": "",
+      "id": 1,
+      "acceptedQuests": []
+    },
+    {
+      "userName": "Jonny",
+      "fName": "Jonny",
+      "lName": "Ivany",
+      "gender": "other",
+      "questscompleted": 0,
+      "questscreated": [
+        1,
+        2,
+        3
+      ],
+      "rewards": [],
+      "passWord": "password",
+      "areaCode": "A1K0C1",
+      "profileIMG": "",
+      "id": 2,
+      "acceptedQuests": [
+        4
+      ]
     }
   ],
   "currentUser": {
-    "userName": "Admin",
-    "fName": "admin",
-    "lName": "admin",
+    "userName": "Jonny",
+    "fName": "Jonny",
+    "lName": "Ivany",
     "gender": "other",
     "questscompleted": 0,
-    "questscreated": 3,
+    "questscreated": [
+      1,
+      2,
+      3
+    ],
     "rewards": [],
-    "passWord": "123",
-    "areaCode": "123123",
+    "passWord": "password",
+    "areaCode": "A1K0C1",
     "profileIMG": "",
-    "id": 1
+    "id": 2,
+    "acceptedQuests": [
+      4
+    ]
   },
   "quests": [
     {
-      "id": 1,
       "title": "Blueberry Pluckin'",
       "description": "Pick a couple of pints of blueberries for some fresh jam!",
       "thumbnail": "/thumbnails/bluebush.jpg",
-      "sDate": "",
-      "eDate": "",
+      "user": "Jonny",
+      "sDate": null,
+      "eDate": null,
       "steps": [
         "Go to the your nearest blueberry pickin spot, take a photo with friends",
         "Take a picture of your bucket of blueberries",
         "Take selfie with LestersFarm clerk & Jam"
       ],
-      "reward": "Fresh Jam"
+      "reward": "Fresh Jam",
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Clean St.John's!",
       "description": "Fill a trash bag and return it to the recycling plant",
       "thumbnail": "/thumbnails/trash.png",
-      "sDate": "",
-      "eDate": "",
+      "user": "Jonny",
+      "sDate": null,
+      "eDate": null,
       "steps": [
         "Go to the your nearest park or just around your community with trash bags",
         "Pick up enough trash to fill bag",
         "Take a selfie with you and the trash bag"
       ],
-      "reward": "$20"
+      "reward": "$20",
+      "id": 2
     },
     {
-      "id": 3,
       "title": "Catch me a Trout",
       "description": "I hurt me had n needs someone ta get me a fish by",
       "thumbnail": "/thumbnails/fish.jpg",
-      "sDate": "",
-      "eDate": "",
+      "user": "Jonny",
+      "sDate": null,
+      "eDate": null,
       "steps": [
         "Drop by 37. newfie dr. to get the fishing gear",
         "I usually go to this lake, take pic of it when you get there",
         "Store fish in cooler with ice keep it alive pls"
       ],
-      "reward": "$40"
+      "reward": "$40",
+      "id": 3
     },
     {
-      "id": 4,
       "title": "Depression Beater",
       "description": "Destroy Alex's depression with nuclear weaponry",
-      "thumbnail": "/thumbnails/alex",
-      "sDate": "",
-      "eDate": "",
+      "thumbnail": "/thumbnails/alex.jpg",
+      "user": "Admin",
+      "sDate": null,
+      "eDate": null,
       "steps": [
         "Example Step 1",
         "Example Step 2",
         "Example Step 3"
       ],
-      "reward": "Glug glug 3000"
+      "reward": "Glug glug 3000",
+      "id": 4
     },
     {
-      "id": 5,
       "title": "Ant Exterminator",
       "description": "Get rid of the ants in my yard",
       "thumbnail": "/thumbnails/ants.jpg",
+      "user": "Admin",
       "sDate": "2023-10-10",
-      "eDate": "",
+      "eDate": null,
       "steps": [
         "Go to my address at address",
         "Knock on side door",
         "Exterminate"
       ],
-      "reward": "Greco Coupon"
+      "reward": "Greco Coupon",
+      "id": 5
     },
     {
-      "id": 6,
       "title": "McBooger Burger",
       "description": "Try McDonald's newest burger!",
-      "thumbnail": "/thumbnails/McBooger.jpg",
+      "thumbnail": "/thumbnails/McBoogar.jpg",
+      "user": "Admin",
       "sDate": "2069-12-25",
-      "eDate": "",
+      "eDate": null,
       "steps": [
         "Go to your nearest participating McDickies",
         "Show the employee this quest",
         "Buy McBoogar"
       ],
-      "reward": "Next Meal Free Coupon"
-    },
-    {
-      "title": "Testing Quest",
-      "description": "taste it?",
-      "thumbnail": {},
-      "user": "Admin",
-      "userLimit": "1",
-      "startDate": "2022-05-25",
-      "endDate": "2022-05-26",
-      "steps": [
-        "test",
-        "test",
-        "and more test",
-        "test again",
-        "And once more"
-      ],
-      "reward": "my donger",
-      "id": 7
-    },
-    {
-      "title": "test2",
-      "description": "test2",
-      "thumbnail": {},
-      "user": "Admin",
-      "userLimit": "1",
-      "startDate": null,
-      "endDate": null,
-      "steps": [
-        "test2",
-        "test2",
-        "test2"
-      ],
-      "reward": "test2",
-      "id": 8
-    },
-    {
-      "title": "test3",
-      "description": "aasdasdad",
-      "thumbnail": {},
-      "user": "Admin",
-      "userLimit": "1",
-      "startDate": null,
-      "endDate": null,
-      "steps": [
-        "test3",
-        "test3",
-        "test3"
-      ],
-      "reward": "mandingo",
-      "id": 9
-    },
-    {
-      "id": 10
+      "reward": "Next Meal Free Coupon",
+      "id": 6
     },
     {
       "title": "Tylers Stuck",
       "description": "Help Free Tyler",
-      "thumbnail": {},
+      "thumbnail": "/thumbnails/helpTy.jpg",
       "user": "Admin",
       "userLimit": "1",
       "startDate": null,
@@ -179,6 +160,70 @@
         "now youre gay"
       ],
       "reward": "hehehoohoo",
+      "id": 7
+    },
+    {
+      "title": "Name Here I Guess",
+      "description": "I need to come up with a quest but I can't think of anything",
+      "thumbnail": "thumbnails/think.jpg",
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": "2023-04-16",
+      "endDate": "2023-04-19",
+      "steps": [
+        "Come up with an idea for a quest",
+        "Submit it to me"
+      ],
+      "reward": "A quest",
+      "id": 8
+    },
+    {
+      "title": "Babysit Rover",
+      "description": "I need someone to care for my dog while I'm on vacation",
+      "thumbnail": "thumbnails/pup.jpg",
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": "2023-04-20",
+      "endDate": "2023-04-25",
+      "steps": [
+        "Pick up Rover from me",
+        "Take care of him, keep him safe and happy",
+        "Give Rover back when I come home"
+      ],
+      "reward": "$75",
+      "id": 9
+    },
+    {
+      "title": "Flower Waterer",
+      "description": "Water my flowers or something, I can't be bothered anymore",
+      "thumbnail": "/thumbnails/flower.jpg",
+      "user": "Admin",
+      "userLimit": "1",
+      "startDate": "2023-04-17",
+      "endDate": "2023-04-18",
+      "steps": [
+        "Get some water",
+        "Pour it on the flowers",
+        "Epic gaming"
+      ],
+      "reward": "Nothing lmao",
+      "id": 10
+    },
+    {
+      "title": "Quest Testing",
+      "description": "Test how our system publishes quest to the feed!",
+      "thumbnail": {},
+      "user": "Jonny",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Create a new quest!",
+        "Images don't work yet sorry.",
+        "Also, solution submission is not yet available.",
+        "Add up to 5 steps here, I'm only gonna add 4 hehe"
+      ],
+      "reward": "A Good Grade for Group 3!",
       "id": 11
     }
   ]

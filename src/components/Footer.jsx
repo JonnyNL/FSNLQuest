@@ -1,6 +1,5 @@
 import React from "react";
 import HowTo from "../site-images/HowItWorks.png";
-import "../footer.css";
 
 const Footer = () => {
   return (

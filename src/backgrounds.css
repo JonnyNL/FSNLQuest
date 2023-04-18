@@ -27,16 +27,16 @@
   margin: auto;
   height: 100%;
   background-repeat: no-repeat;
+  min-height: 1500px;
 }
 .cBackground {
   display: flex;
-  background-image: url(./site-images/cBackground.png);
-  background-size: cover;
-  margin: auto;
-  height: 100vh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(./site-images/cBackground.png);
+  background-size: cover;
 }
 
 .lTitle {
@@ -99,7 +99,7 @@
   background-image: url(./site-images/RegisterBackground.png.jpg);
   background-size: cover;
   margin: auto;
-  height: 100vh;
+  height: 120vh;
   align-items: center;
   justify-content: center;
 }
@@ -139,11 +139,12 @@
   margin-right: auto;
   margin-left: auto;
   background-color: #00000040;
-  width: 600px;
+  width: auto;
   height: auto;
   border: 1px solid rgba(216, 216, 216, 0.5);
   backdrop-filter: blur(2px);
   padding: 30px;
+  margin-bottom: 9em;
 }
 
 .form-group {
@@ -213,4 +214,11 @@
 
 .form-group .inputfield.input-success {
   border: 1px solid green;
+}
+
+.cTitle {
+  font-family: "BioRhyme", serif;
+  color: rgba(134, 128, 128, 0.8); /* Increase opacity */
+  font-size: 2.75em;
+  animation: glowing 8s ease-in-out infinite;
 }

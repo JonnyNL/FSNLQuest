@@ -1,31 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Spectral:ital,wght@1,500&display=swap");
+
 .upcomingquests {
   display: flex;
   flex-direction: row;
 }
 
-.leftupcoming {
+.leftupcoming,
+.rightupcoming {
   background-color: #00000035;
   width: 700px;
   height: 300px;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.lefttoprow {
-  background-color: #ffffff55;
-  width: 700px;
-  height: 50px;
+.leftupcoming {
+  animation: leftHover 3s infinite linear;
 }
 
 .rightupcoming {
-  background-color: #00000035;
   margin-left: 10px;
-  width: 700px;
-  height: 300px;
+  animation: rightHover 3s infinite linear;
 }
 
+.lefttoprow,
 .righttoprow {
   background-color: #ffffff55;
   width: 700px;
   height: 50px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 2.5em;
+  letter-spacing: 0.5em;
+  border-radius: 16px 16px 0 0;
+}
+
+@keyframes leftHover {
+  0%,
+  100% {
+    transform: translateY(-5px) translateX(0);
+  }
+  25% {
+    transform: translateY(0) translateX(5px);
+  }
+  50% {
+    transform: translateY(5px) translateX(0);
+  }
+  75% {
+    transform: translateY(0) translateX(-5px);
+  }
+}
+
+@keyframes rightHover {
+  0%,
+  100% {
+    transform: translateY(5px) translateX(0);
+  }
+  25% {
+    transform: translateY(0) translateX(-5px);
+  }
+  50% {
+    transform: translateY(-5px) translateX(0);
+  }
+  75% {
+    transform: translateY(0) translateX(5px);
+  }
 }
 
 @media screen and (max-width: 767px) {

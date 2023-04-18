@@ -1,50 +1,13 @@
-.usermadequests {
-  display: flex;
-  flex-direction: row;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Spectral:ital,wght@1,500&display=swap");
 
-.leftuser {
-  background-color: #00000035;
-  width: 350px;
-  height: 250px;
-  flex-direction: column;
-  border-radius: 16px 16px 0px 0px;
-}
-.topleft {
-  background-color: #ffffff55;
-  position: relative;
-  width: 350px;
-  height: 40px;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.bottomleft {
-  position: relative;
-  background-color: #d9d9d9;
-  width: 350px;
-  height: 30px;
-  top: calc(15 - 8px);
-  margin-top: -10px;
-}
-
-.roundleft {
-  position: relative;
-  background-color: #d9d9d9;
-  width: 330px;
-  height: 20px;
-  margin-top: 170px;
-  margin-left: 0.65em;
-  border-radius: 16px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.middleuser {
+.questCard {
   background-color: #00000035;
   width: 350px;
   height: 250px;
   margin-left: 70px;
   flex-direction: column;
   border-radius: 16px 16px 0px 0px;
+  position: relative; /* Add this line */
 }
 .topmiddle {
   background-color: #ffffff55;
@@ -52,73 +15,158 @@
   width: 350px;
   height: 40px;
   border-radius: 16px 16px 0px 0px;
+  z-index: 2;
+  font-family: "Cinzel";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bottommiddle {
   position: relative;
   background-color: #d9d9d9;
   width: 350px;
-  height: 30px;
+  height: 21px;
   top: calc(15 - 8px);
-  margin-top: -10px;
+  margin-top: -27px;
+  z-index: 2;
+  background-color: #ffffff6c;
 }
 
 .roundmiddle {
   position: relative;
-  background-color: #d9d9d9;
+  background: linear-gradient(
+    180deg,
+    #ffffff6c 0%,
+    #ffffff6c 63%,
+    rgba(255, 255, 255, 0) 64%,
+    rgba(255, 255, 255, 0) 100%
+  );
   width: 330px;
-  height: 20px;
-  margin-top: 170px;
-  margin-left: 0.65em;
-  border-radius: 16px;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.rightuser {
-  background-color: #00000035;
-  width: 350px;
-  height: 250px;
-  margin-left: 70px;
-  flex-direction: column;
-  border-radius: 16px 16px 0px 0px;
-}
-.topright {
-  background-color: #ffffff55;
-  position: relative;
-  width: 350px;
-  height: 40px;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.bottomright {
-  position: relative;
-  background-color: #d9d9d9;
-  width: 350px;
   height: 30px;
-  top: calc(15 - 8px);
-  margin-top: -10px;
-}
-
-.roundright {
-  position: relative;
-  background-color: #d9d9d9;
-  width: 330px;
-  height: 20px;
   margin-top: 170px;
   margin-left: 0.65em;
   border-radius: 16px;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
   .userquests {
     flex-direction: column;
   }
-  .leftuser,
-  .rightuser {
-    display: none;
-  }
-  .middleuser {
+
+  .usermade {
     margin: 0 auto;
+  }
+}
+
+.questImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.userquests {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .userquests {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .userquests {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .userquests {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -12%;
+  }
+}
+
+.questImg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.questDescription {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  border-radius: 16px 16px 0px 0px;
+  transition: opacity 0.5s ease;
+  font-family: "Cinzel";
+  color: rgba(0, 255, 255, 0.699);
+  text-align: center;
+}
+
+.questCard:hover .questDescription {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.userrewardq {
+  position: relative;
+  top: -15px;
+  font-size: 1.44em;
+  font-family: "Cinzel";
+}
+
+.iChest {
+  position: relative;
+  vertical-align: middle;
+  top: -15px;
+  color: rgb(255, 255, 255);
+  animation: shimmer 2s infinite;
+  font-size: 1.45em;
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    color: white;
+    text-shadow: none;
+  }
+  50% {
+    color: #eee;
+    text-shadow: 0 0 5px #fff, 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
+      0 0 40px rgba(255, 255, 255, 0.8);
   }
 }

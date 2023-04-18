@@ -59,7 +59,12 @@ function Navbar() {
         >
           Create Quest
         </button>
-        <div className="navbar-notifier">
+        <div
+          className="navbar-notifier"
+          onClick={() => {
+            navigate("/yourquests");
+          }}
+        >
           <GiBlackFlag style={{ size: "40" }} />
         </div>
       </div>

@@ -70,7 +70,8 @@ function ProfileStats({ onClose }) {
         {fName} {lName}
       </p>
       <p>
-        Quests Completed: {questscompleted} Quests Created: {questscreated}
+        Quests Completed: {questscompleted} Quests Created:{" "}
+        {questscreated.length}
       </p>
       <p>Rewards: {rewards.length}</p>
       <button className="logbuttonC" onClick={handleLogout}>

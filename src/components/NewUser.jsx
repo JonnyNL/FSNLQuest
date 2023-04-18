@@ -8,8 +8,9 @@ class NewUser {
     this.gender = gender;
     this.profileIMG = profileIMG;
     this.questscompleted = 0;
-    this.questscreated = 0;
+    this.questscreated = [];
     this.rewards = [];
+    this.acceptedQuests = [];
   }
 }
 

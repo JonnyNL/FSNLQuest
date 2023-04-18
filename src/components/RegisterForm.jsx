@@ -1,9 +1,13 @@
+// Author: Jonathan Ivany 2023-04-15
+
+// Import required libraries and components
 import React, { useState } from "react";
 import NewUser from "./NewUser";
 import GenderSelect from "./GenderSelect";
 import { useNavigate } from "react-router-dom";
 
 const RegisterForm = ({ users, addUser }) => {
+  // Define state variables using the useState hook
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVerify, setPasswordVerify] = useState("");
@@ -18,7 +22,7 @@ const RegisterForm = ({ users, addUser }) => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const navigate = useNavigate();
-
+  // Check that all fields have been filled in
   const validateForm = () => {
     let isValid = true;
     let errors = {};
@@ -47,19 +51,19 @@ const RegisterForm = ({ users, addUser }) => {
       errors.areaCode = true;
       isValid = false;
     }
-
+    // Set the fieldError state variable to the errors object
     setFieldError(errors);
-
+    // If the form is not valid, display an error message and return false
     if (!isValid) {
       setError("Please fill in all the fields.");
       return false;
     }
-
+    // Match passwords to make sure user knows what they typed
     if (password !== passwordVerify) {
       setError("Passwords don't match.");
       return false;
     }
-
+    // If the form is valid, set the 'fieldSuccess' state variable and return true
     if (isValid) {
       setFieldSuccess({
         username: true,
@@ -73,24 +77,14 @@ const RegisterForm = ({ users, addUser }) => {
 
     return isValid;
   };
-
-  const getProfileImagePath = (gender) => {
-    switch (gender) {
-      case "male":
-        return "../site-images/AvatarMale.png";
-      case "female":
-        return "../site-images/AvatarFemale.png";
-      default:
-        return "../site-images/AvatarOther.png";
-    }
-  };
-
+  // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // If the form is not valid, return
     if (!validateForm()) {
       return;
     }
-
+    // Create a new user object using the NewUser class and the form data
     const newUser = new NewUser(
       username,
       password,
@@ -100,9 +94,12 @@ const RegisterForm = ({ users, addUser }) => {
       gender,
       profileIMG
     );
+    // Call the 'addUser' function passed as a prop to add the new user to the 'users' array
+    // and handle any errors with the 'setError' function
     const isSuccess = await addUser(newUser, setError);
 
     if (isSuccess) {
+      // If user was successfully added, reset form fields and display success message
       setUsername("");
       setPassword("");
       setPasswordVerify("");
@@ -216,7 +213,9 @@ const RegisterForm = ({ users, addUser }) => {
       >
         {error && <div className="error">{error}</div>}
         {successMessage && (
-          <div style={{ color: "green" }}>Account Creation Success</div>
+          <div style={{ color: "green" }}>
+            Account Creation Success! redirecting...
+          </div>
         )}
         <button className="logbutton" type="submit">
           Create Account

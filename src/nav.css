@@ -73,8 +73,15 @@
   display: flex;
   align-items: center;
   margin-left: 15px; /* Add margin to the left side of the notifier icon */
+  cursor: pointer;
 }
 
+.navbar-notifier:hover {
+  border-style: ridge;
+  border-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  background-color: rgba(255, 0, 0, 0.295);
+}
 .profile-stats {
   position: absolute;
   top: 100%;

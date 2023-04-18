@@ -95,3 +95,35 @@
   color: #ffffff;
   font-size: 14px;
 }
+
+.gender-radio {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 4px;
+}
+
+.gender-radio:checked {
+  background-color: rgba(122, 221, 213, 0.89);
+}
+
+.gender-radio:checked:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

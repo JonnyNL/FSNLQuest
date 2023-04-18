@@ -32,6 +32,7 @@ function GenderSelect() {
             value="other"
             checked={gender === "other"}
             onChange={handleGenderChange}
+            className="gender-radio"
           />
           Who Cares
         </label>
@@ -42,6 +43,7 @@ function GenderSelect() {
             value="male"
             checked={gender === "male"}
             onChange={handleGenderChange}
+            className="gender-radio"
           />
           Male
         </label>
@@ -52,6 +54,7 @@ function GenderSelect() {
             value="female"
             checked={gender === "female"}
             onChange={handleGenderChange}
+            className="gender-radio"
           />
           Female
         </label>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import NewQuest from "./NewQuest"; // Import the NewQuest class
 import QuestForm from "./CreateQuest/QuestForm"; // Import the QuestForm component (I'll provide the code below)
-
+import "../backgrounds.css";
 const CreateQuest = () => {
   const [thumbnail, setThumbnail] = useState(null);
 
@@ -24,7 +23,7 @@ const CreateQuest = () => {
 
   return (
     <div className="cBackground">
-      <h1>Create New Quest</h1>
+      <h1 className="cTitle">Create New Quest</h1>
       <QuestForm
         onThumbnailChange={handleThumbnailChange}
         onSubmit={handleSubmit}
