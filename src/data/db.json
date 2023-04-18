@@ -91,29 +91,45 @@
       "rewards": [],
       "acceptedQuests": [],
       "id": 6
+    },
+    {
+      "userName": "NewUser",
+      "fName": "New",
+      "lName": "User",
+      "gender": "other",
+      "questscompleted": 0,
+      "questscreated": [
+        12
+      ],
+      "rewards": [],
+      "passWord": "123",
+      "areaCode": "A1K0C1",
+      "profileIMG": "",
+      "acceptedQuests": [
+        1,
+        4
+      ],
+      "id": 7
     }
   ],
   "currentUser": {
-    "userName": "Jonny",
-    "fName": "Jonny",
-    "lName": "Ivany",
+    "userName": "NewUser",
+    "fName": "New",
+    "lName": "User",
     "gender": "other",
     "questscompleted": 0,
     "questscreated": [
-      1,
-      2,
-      3,
-      14,
       12
     ],
     "rewards": [],
-    "passWord": "password",
+    "passWord": "123",
     "areaCode": "A1K0C1",
     "profileIMG": "",
-    "id": 2,
     "acceptedQuests": [
+      1,
       4
-    ]
+    ],
+    "id": 7
   },
   "quests": [
     {
@@ -285,6 +301,22 @@
       ],
       "reward": "A Good Grade for Group 3!",
       "id": 11
+    },
+    {
+      "title": "Dirt Bag Team Mates",
+      "description": "grouping is seriously overrated",
+      "thumbnail": "",
+      "user": "NewUser",
+      "userLimit": "1",
+      "startDate": "2023-04-19",
+      "endDate": "2023-04-20",
+      "steps": [
+        "Testing upcoming quests",
+        "I love my work",
+        "They aint getting no credit"
+      ],
+      "reward": "Poopies",
+      "id": 12
     }
   ]
 }

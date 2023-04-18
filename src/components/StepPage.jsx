@@ -5,6 +5,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "./StepPage.css";
+import backgroundVid from "../site-images/BackgroundVtest.mp4";
 
 const StepPage = () => {
   // Set state variables for the quest steps and the selected quest id
@@ -25,18 +27,26 @@ const StepPage = () => {
   }, [questId]);
 
   return (
-    <div className="step-page">
-      <h1>
+    <div className="stPstep-page">
+      <div className="video-background">
+        <video src={backgroundVid} autoPlay muted loop playsInline></video>
+      </div>
+      <h1 className="Explain">
         Quest Steps: Future Implementation, adding solution will send to quest
         maker where they can review
       </h1>
-      <div className="steps-container">
+      <div className="stPsteps-container">
         {steps &&
           steps.map((step, index) => (
-            <div key={index} className="step">
+            <div key={index} className="stPstep">
               {step}
             </div>
           ))}
+      </div>
+      <div className="stPbutton-container">
+        <button className="stPback-button" onClick={() => navigate("/landing")}>
+          Back To Quests
+        </button>
       </div>
     </div>
   );
