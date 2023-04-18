@@ -1,12 +1,19 @@
 {
   "users": [
     {
-      "userName": "Admin",
-      "fName": "admin",
-      "lName": "admin",
+      "userName": "Tyler",
+      "fName": "Tyler",
+      "lName": "Stuckless",
       "gender": "other",
       "questscompleted": 0,
-      "questscreated": 3,
+      "questscreated": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "rewards": [],
       "passWord": "123",
       "areaCode": "123123",
@@ -18,14 +25,13 @@
       "userName": "Jonny",
       "fName": "Jonny",
       "lName": "Ivany",
-      "gender": "other",
+      "gender": "male",
       "questscompleted": 0,
       "questscreated": [
         1,
         2,
         3,
-        14,
-        12
+        4
       ],
       "rewards": [],
       "passWord": "password",
@@ -37,99 +43,61 @@
       ]
     },
     {
-      "userName": "GoodPostal",
-      "passWord": "postal",
-      "fName": "NL",
-      "lName": "Postal",
-      "areaCode": "A1K0C1",
-      "gender": "other",
-      "profileIMG": "",
-      "questscompleted": 0,
-      "questscreated": [],
-      "rewards": [],
-      "acceptedQuests": [],
-      "id": 3
-    },
-    {
-      "userName": "Test2",
-      "passWord": "asd",
-      "fName": "asd",
-      "lName": "asd",
-      "areaCode": "A1K0C1",
-      "gender": "other",
-      "profileIMG": "",
-      "questscompleted": 0,
-      "questscreated": [],
-      "rewards": [],
-      "acceptedQuests": [],
-      "id": 4
-    },
-    {
-      "userName": "asd",
-      "passWord": "asd",
-      "fName": "asd",
-      "lName": "asd",
-      "areaCode": "A1A2S3",
-      "gender": "other",
-      "profileIMG": "",
-      "questscompleted": 0,
-      "questscreated": [],
-      "rewards": [],
-      "acceptedQuests": [],
-      "id": 5
-    },
-    {
-      "userName": "asd3",
-      "passWord": "asd",
-      "fName": "asd",
-      "lName": "asd",
-      "areaCode": "A2A1Y3",
-      "gender": "other",
-      "profileIMG": "",
-      "questscompleted": 0,
-      "questscreated": [],
-      "rewards": [],
-      "acceptedQuests": [],
-      "id": 6
-    },
-    {
-      "userName": "NewUser",
-      "fName": "New",
-      "lName": "User",
+      "userName": "Creatanator",
+      "fName": "Quest",
+      "lName": "Creator",
       "gender": "other",
       "questscompleted": 0,
       "questscreated": [
-        12
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
       ],
       "rewards": [],
-      "passWord": "123",
-      "areaCode": "A1K0C1",
+      "passWord": "create",
+      "areaCode": "A1A1A1",
       "profileIMG": "",
       "acceptedQuests": [
-        1,
-        4
+        1
       ],
-      "id": 7
+      "id": 3
     }
   ],
   "currentUser": {
-    "userName": "NewUser",
-    "fName": "New",
-    "lName": "User",
+    "userName": "Creatanator",
+    "fName": "Quest",
+    "lName": "Creator",
     "gender": "other",
     "questscompleted": 0,
     "questscreated": [
-      12
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
     ],
     "rewards": [],
-    "passWord": "123",
-    "areaCode": "A1K0C1",
+    "passWord": "create",
+    "areaCode": "A1A1A1",
     "profileIMG": "",
     "acceptedQuests": [
-      1,
-      4
+      1
     ],
-    "id": 7
+    "id": 3
   },
   "quests": [
     {
@@ -178,40 +146,40 @@
       "id": 3
     },
     {
-      "title": "Depression Beater",
-      "description": "Destroy Alex's depression with nuclear weaponry",
-      "thumbnail": "/thumbnails/alex.jpg",
-      "user": "Admin",
-      "sDate": null,
+      "title": "Take Care of Repto",
+      "description": "I need somebody to take care of my lil buddy",
+      "thumbnail": "/thumbnails/Beardy.jpg",
+      "user": "Jonny",
+      "sDate": "2023-04-29",
       "eDate": null,
       "steps": [
-        "Example Step 1",
-        "Example Step 2",
-        "Example Step 3"
+        "You have to have experience with bearded dragons",
+        "Answer this question: How many eyes do bearded dragons have?",
+        "You will have to take care of him for 12 days"
       ],
-      "reward": "Glug glug 3000",
+      "reward": "$400",
       "id": 4
     },
     {
       "title": "Ant Exterminator",
       "description": "Get rid of the ants in my yard",
       "thumbnail": "/thumbnails/ants.jpg",
-      "user": "Admin",
-      "sDate": "2023-10-10",
+      "user": "Tyler",
+      "sDate": null,
       "eDate": null,
       "steps": [
         "Go to my address at address",
         "Knock on side door",
         "Exterminate"
       ],
-      "reward": "Greco Coupon",
+      "reward": "Free Pizza Coupon",
       "id": 5
     },
     {
       "title": "McBooger Burger",
       "description": "Try McDonald's newest burger!",
       "thumbnail": "/thumbnails/McBoogar.jpg",
-      "user": "Admin",
+      "user": "Tyler",
       "sDate": "2069-12-25",
       "eDate": null,
       "steps": [
@@ -226,23 +194,23 @@
       "title": "Tylers Stuck",
       "description": "Help Free Tyler",
       "thumbnail": "/thumbnails/helpTy.jpg",
-      "user": "Admin",
+      "user": "Tyler",
       "userLimit": "1",
       "startDate": null,
       "endDate": null,
       "steps": [
         "Bend over and spell out run 5 times",
         "stand back up and pat yourself on the back",
-        "now youre gay"
+        "open the washer"
       ],
-      "reward": "hehehoohoo",
+      "reward": "Save a life",
       "id": 7
     },
     {
       "title": "Name Here I Guess",
       "description": "I need to come up with a quest but I can't think of anything",
       "thumbnail": "thumbnails/think.jpg",
-      "user": "Admin",
+      "user": "Tyler",
       "userLimit": "1",
       "startDate": "2023-04-16",
       "endDate": "2023-04-19",
@@ -257,7 +225,7 @@
       "title": "Babysit Rover",
       "description": "I need someone to care for my dog while I'm on vacation",
       "thumbnail": "thumbnails/pup.jpg",
-      "user": "Admin",
+      "user": "Tyler",
       "userLimit": "1",
       "startDate": "2023-04-20",
       "endDate": "2023-04-25",
@@ -271,52 +239,195 @@
     },
     {
       "title": "Flower Waterer",
-      "description": "Water my flowers or something, I can't be bothered anymore",
+      "description": "Water My Flowers",
       "thumbnail": "/thumbnails/flower.jpg",
-      "user": "Admin",
+      "user": "Tyler",
       "userLimit": "1",
       "startDate": "2023-04-17",
       "endDate": "2023-04-18",
       "steps": [
         "Get some water",
         "Pour it on the flowers",
-        "Epic gaming"
+        "Sprinkle fertalizer"
       ],
-      "reward": "Nothing lmao",
+      "reward": "Freshly Baked Apple Pie",
       "id": 10
     },
     {
-      "title": "Quest Testing",
-      "description": "Test how our system publishes quest to the feed!",
-      "thumbnail": {},
-      "user": "Jonny",
+      "title": "Save Ukraine",
+      "description": "Slava Ukraini!",
+      "thumbnail": "/thumbnails/ukraine.jpg",
+      "user": "Creatanator",
+      "userLimit": "1000",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Get on a plane to Ukraine",
+        "Claim Slava Ukraini on entry",
+        "Train to save"
+      ],
+      "reward": "Glory to Ukraine",
+      "id": 11
+    },
+    {
+      "title": "Try Food Delivery",
+      "description": "Want to try food delivery without ties?",
+      "thumbnail": "/thumbnails/FoodDelivery.jpg",
+      "user": "Creatanator",
+      "userLimit": "150",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Download FoodZip",
+        "Type your NLQUEST username",
+        "Get matched to deliver quick"
+      ],
+      "reward": "$15 per Delivery",
+      "id": 12
+    },
+    {
+      "title": "Go To A Concert",
+      "description": "I've been cheated on but have another ticket, paying for friends",
+      "thumbnail": "/thumbnails/Concert.jpg",
+      "user": "Creatanator",
       "userLimit": "1",
       "startDate": null,
       "endDate": null,
       "steps": [
-        "Create a new quest!",
-        "Images don't work yet sorry.",
-        "Also, solution submission is not yet available.",
-        "Add up to 5 steps here, I'm only gonna add 4 hehe"
+        "Tell me why you should go to the concert",
+        "What is your favorite bands ",
+        "Bring your own drugs"
       ],
-      "reward": "A Good Grade for Group 3!",
-      "id": 11
+      "reward": "$125 & Friend",
+      "id": 13
     },
     {
-      "title": "Dirt Bag Team Mates",
-      "description": "grouping is seriously overrated",
-      "thumbnail": "",
-      "user": "NewUser",
-      "userLimit": "1",
-      "startDate": "2023-04-19",
-      "endDate": "2023-04-20",
+      "title": "Help Move Junk",
+      "description": "I'm trying to clear this place, help me move this",
+      "thumbnail": "/thumbnails/MoveCar.jpg",
+      "user": "Creatanator",
+      "userLimit": "4",
+      "startDate": null,
+      "endDate": null,
       "steps": [
-        "Testing upcoming quests",
-        "I love my work",
-        "They aint getting no credit"
+        "I'm located at #########",
+        "First person to get here and help gets rewarded",
+        "Optionally help me with other stuff"
       ],
-      "reward": "Poopies",
-      "id": 12
+      "reward": "$76.89",
+      "id": 14
+    },
+    {
+      "title": "Headlight Repair",
+      "description": "I can't fix this on my own",
+      "thumbnail": "/thumbnails/RepairLight.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Not sure what you'll need but you'll need somethin",
+        "The car is located at 12 fixmycar way.",
+        "When you fix knock on the door of the yellow house #12"
+      ],
+      "reward": "$20",
+      "id": 15
+    },
+    {
+      "title": "Restore Property",
+      "description": "I need help restoring the land around this propert",
+      "thumbnail": "/thumbnails/RestoreProperty.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Get your stuff ready",
+        "Call me",
+        "Drive to location and mow"
+      ],
+      "reward": "$100",
+      "id": 16
+    },
+    {
+      "title": "Hobo Hero",
+      "description": "Bring homeless to the shelter",
+      "thumbnail": "/thumbnails/HoboHeroe.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Find homeless",
+        "Don't collect them, theyre people too",
+        "Bring to, to shelter at this place #####"
+      ],
+      "reward": "$10 per person",
+      "id": 17
+    },
+    {
+      "title": "Roofing",
+      "description": "We need a roofer for a couple of days, no experience needed",
+      "thumbnail": "/thumbnails/Roofing.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Get a hammer if you dont have one",
+        "Box of nails too",
+        "Call # ### #####"
+      ],
+      "reward": "$100 per day",
+      "id": 18
+    },
+    {
+      "title": "Car Washing",
+      "description": "We need help at the car wash",
+      "thumbnail": "/thumbnails/CarWashing.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "You're gonna get wet",
+        "Dress accordingly",
+        "Go to # #### #######"
+      ],
+      "reward": "$6.50 per car",
+      "id": 19
+    },
+    {
+      "title": "Mouse Problem",
+      "description": "My garden is overrun with mice!!",
+      "thumbnail": "/thumbnails/MouseProblem.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "Just come by and start killin",
+        "When you have one show me",
+        "Ill pay you $25 per mouse"
+      ],
+      "reward": "$25+",
+      "id": 20
+    },
+    {
+      "title": "Plant for me",
+      "description": "I bought a bunch of plants, and have no skill to plant them",
+      "thumbnail": "/thumbnails/PlantPlants.jpg",
+      "user": "Creatanator",
+      "userLimit": "1",
+      "startDate": null,
+      "endDate": null,
+      "steps": [
+        "I bought no fertalizer, youll need that",
+        "I also have no gardening tools so get those too",
+        "Plant my succulents"
+      ],
+      "reward": "$35",
+      "id": 21
     }
   ]
 }

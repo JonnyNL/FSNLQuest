@@ -16,7 +16,7 @@
 
 .leftquest {
   background-color: #00000035;
-  width: 350px;
+  width: 450px;
   height: 250px;
   margin-top: 60px;
   flex-direction: column;
@@ -26,7 +26,7 @@
 .topleftrow {
   background-color: #ffffff55;
   position: relative;
-  width: 350px;
+  width: 450px;
   height: 40px;
   border-radius: 16px 16px 0px 0px;
   z-index: 2;
@@ -41,7 +41,7 @@
 .bottomleftrow {
   position: relative;
   background-color: #ffffff6c;
-  width: 350px;
+  width: 450px;
   height: 30px;
   top: calc(15 - 8px);
   margin-top: -10px;
@@ -66,7 +66,7 @@
     rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  width: 330px;
+  width: 430px;
   height: 20px;
   margin-top: 170px;
   margin-left: 0.65em;
@@ -157,7 +157,7 @@
 
 .rightquest {
   background-color: #00000035;
-  width: 350px;
+  width: 450px;
   height: 250px;
   margin-left: 10px;
   margin-top: 60px;
@@ -168,7 +168,7 @@
 .toprightrow {
   background-color: #ffffff55;
   position: relative;
-  width: 350px;
+  width: 450px;
   height: 40px;
   border-radius: 16px 16px 0px 0px;
   z-index: 2;
@@ -183,7 +183,7 @@
 .bottomrightrow {
   position: relative;
   background-color: #ffffff6c;
-  width: 350px;
+  width: 450px;
   height: 30px;
   top: calc(15 - 8px);
   margin-top: -10px;
@@ -208,7 +208,7 @@
     rgba(255, 255, 255, 0) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  width: 330px;
+  width: 430px;
   height: 20px;
   margin-top: 170px;
   margin-left: 0.65em;
