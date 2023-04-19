@@ -55,14 +55,16 @@ User can register as long as their postal code begins with an A, to cut down on 
 
 # **Photo Credits**
 
-**Sign In background**: Jonathan Ivany
-**How To Picture**: Tyler Stuckless
-**Create An Account Background**: Tyler Stuckless
-**Landing Page Background\*: Jonathan Ivany
-**Site Logo**: Jonathan Ivany
-**Site Avatars\*\*: Jonathan Ivany
+(_Sign In background_: Jonathan Ivany)
+(_How To Picture_: Tyler Stuckless)
+(_Create An Account Background_: Tyler Stuckless)
+(_Landing Page Background_: Jonathan Ivany)
+(_Site Logo_: Jonathan Ivany)
+(_Site Avatars_: Jonathan Ivany)
 
-# **Temporary placeholder images**(To be replaced with user images)
+# **Temporary placeholder images**
+
+(To be replaced with user images)
 
 Ukraine
 
