@@ -53,7 +53,8 @@ User can register as long as their postal code begins with an A, to cut down on 
 
   ** Many more functionalities to come! Current version cut due to time constraints and skill **
 
-**Photo Credits**
+# **Photo Credits**
+
 **Sign In background**: Jonathan Ivany
 **How To Picture**: Tyler Stuckless
 **Create An Account Background**: Tyler Stuckless
