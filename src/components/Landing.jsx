@@ -1,3 +1,8 @@
+// Author: Jonathan Ivany
+
+// The purpose of this component is to render the landing page for NLQUEST
+// Consisting of a navbar, featured section, upcoming quest section, and a user made quest section
+
 import React from "react";
 import NavBar from "../components/NavBar";
 import Featured from "./landing/Featured";

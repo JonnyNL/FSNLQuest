@@ -1,3 +1,8 @@
+// Author: Jonathan Ivany
+
+// THe purpose of this component is to render a quest card for every quest made, it will have the same functionalities as the featured component
+// except it will also display upcoming quests but have the button greyed out as "Unavailable"
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { GiChest } from "react-icons/gi";
@@ -62,7 +67,7 @@ const UserMade = () => {
       navigate("/steps", { state: { questId: quest.id } });
     }
   };
-
+  // Function that renders the quest into a quest card and assigns the corresponding button and data
   const renderQuest = (quest) => {
     const questAccepted = acceptedQuests.has(quest.id);
     const isQuestCreatedByCurrentUser =
@@ -71,13 +76,14 @@ const UserMade = () => {
       !quest.sDate ||
       new Date(quest.sDate).setHours(0, 0, 0, 0) <=
         new Date().setHours(0, 0, 0, 0);
-
+    // Function that checks how the quest relates to the user and renders the corresponding button
     const getButtonLabel = () => {
       if (isQuestCreatedByCurrentUser) return "Your Quest";
       if (!isQuestAvailable) return "Not Yet Available";
       return questAccepted ? "View Steps" : "Accept Quest";
     };
-
+    // Function that sets the class of the button dependng on the buttons label
+    // which came from the above function
     const getButtonClass = () => {
       if (isQuestCreatedByCurrentUser || getButtonLabel() === "View Steps") {
         return "yourQuest";
@@ -87,7 +93,7 @@ const UserMade = () => {
       }
       return "";
     };
-
+    // Function to route user to their quests with the button if they created the quest card
     const handleQuestButtonClick = () => {
       if (isQuestCreatedByCurrentUser) {
         navigate("/yourquests");

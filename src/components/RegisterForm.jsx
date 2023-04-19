@@ -1,5 +1,8 @@
 // Author: Jonathan Ivany 2023-04-15
 
+// The purpose of this component is to render the register form for creating account, it makes sure the values are valid
+// Then feeds them back to the Register page which on submit adds the user as a new user object in db.json
+
 // Import required libraries and components
 import React, { useState } from "react";
 import NewUser from "./NewUser";

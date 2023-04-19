@@ -1,3 +1,7 @@
+// Author: Jonathan Ivany
+
+// This is the user contructor which creates a new user object that I add to db.json
+
 class NewUser {
   constructor(userName, passWord, fName, lName, areaCode, gender, profileIMG) {
     this.userName = userName;

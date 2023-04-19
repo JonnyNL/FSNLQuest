@@ -1,3 +1,8 @@
+// Author : Jonathan Ivany & Alex Gillespie
+
+// The purpose of this component is to generate the create a quest form and gather the values from that
+// form  feeding it back to the create a quest page which adds the new values as a quest object to the db.json file
+
 // Importing the useState hook and the useNavigate hook from the react-router-dom package
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";

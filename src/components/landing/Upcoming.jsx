@@ -1,3 +1,7 @@
+// Author: Jonathan Ivany
+
+// The purpose of this component is to render 2 quest cards that will display only the 2 nearest unavailable quests to feature upcoming quests
+
 import React, { useEffect, useState } from "react";
 
 const Upcoming = () => {

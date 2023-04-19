@@ -1,5 +1,8 @@
 // Author: Jonathan Ivany 2023/04/10
 
+// The purpose of this SignInPage is to let users sign in if they have credentials to access the rest of the site, or they
+// can view info on the site or navigate to create an account.
+
 // Import required libraries and components
 import React, { useState } from "react";
 import Logo from "../site-images/NLQuestLogo.png";

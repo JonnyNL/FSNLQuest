@@ -1,3 +1,8 @@
+// Author: Jonathan
+
+// The purpose of this component is to render the profile stats div that you can see when clicking on the users profile picture
+// The profile stats div allows user to log out
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -33,6 +38,7 @@ function ProfileStats({ onClose }) {
     rewards,
   } = currentUser;
 
+  // Functio to reset the stats in currentUser if the user logs out
   const resetCurrentUser = async () => {
     try {
       const response = await fetch("http://localhost:5000/currentUser", {
@@ -56,7 +62,7 @@ function ProfileStats({ onClose }) {
       console.error("Error resetting current user:", error);
     }
   };
-
+  // Function to handle logout navigation
   const handleLogout = async () => {
     await resetCurrentUser();
     onClose();

@@ -1,3 +1,7 @@
+// Author: Jonathan Ivany
+
+// This is the quest constructor for making new quest objects and adding them to db.json
+
 class NewQuest {
   constructor(
     id,

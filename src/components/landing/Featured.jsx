@@ -1,3 +1,8 @@
+// Author: Jonathan Ivany
+// The purpose of this component is to render quests cards and randomly select 3 created quests to show within these quest cards
+// Quest cards function is to display a user created quest, allow user to accept & view steps, or let the quest creator be lead back to their quest page
+// where they can delete the quest, future update will allow user to edit steps, thumbnail, users allowed to take quest
+
 // Importing the useState and useEffect hooks, as well as the GiChest icon and the useNavigate hook from react-router-dom
 import React, { useState, useEffect } from "react";
 import { GiChest } from "react-icons/gi";

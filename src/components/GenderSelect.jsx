@@ -1,3 +1,7 @@
+// Author: Jonathan Ivany
+
+// The purpose of this component is to handle the gender selection on the create an account page
+
 import React, { useState } from "react";
 import AvatarMale from "../site-images/AvatarMale.png";
 import AvatarFemale from "../site-images/AvatarFemale.png";
@@ -10,6 +14,7 @@ function GenderSelect() {
     setGender(event.target.value);
   };
 
+  // Early stage profile image selection features base avatars I made, this function will select the avatar based on the gender
   const getImageSrc = () => {
     if (gender === "male") {
       return AvatarMale;

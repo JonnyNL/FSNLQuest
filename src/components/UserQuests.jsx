@@ -1,3 +1,7 @@
+// Author: Jonathan Ivany
+
+// The purpose of this component is to allow users to delete or abandon quests they've created or accepted
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserQuests.css";
@@ -12,25 +16,27 @@ const UserQuests = () => {
     fetchQuests();
   }, []);
 
+  // Get current user to check data
   const fetchCurrentUser = async () => {
     const response = await fetch("http://localhost:5000/currentUser");
     const user = await response.json();
     setCurrentUser(user);
   };
 
+  // Check quests to compare data
   const fetchQuests = async () => {
     const response = await fetch("http://localhost:5000/quests");
     const questsData = await response.json();
     setQuests(questsData);
   };
-
+  // Function to handle the deletion of quests
   const deleteQuest = async (questId) => {
     await fetch(`http://localhost:5000/quests/${questId}`, {
       method: "DELETE",
     });
     fetchQuests();
   };
-
+  // If the user has this quest id accepted allow them to abandon/remove it
   const abandonQuest = async (questId) => {
     const updatedUser = {
       ...currentUser,
@@ -51,7 +57,7 @@ const UserQuests = () => {
 
     setCurrentUser(updatedUser);
   };
-
+  // If the user has this quest id created allow them to remove it
   const renderYourCreations = () => {
     if (!currentUser) return null;
 
