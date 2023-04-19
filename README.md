@@ -13,8 +13,8 @@ the job and the pay out is always GIVEN! No more getting hired for something and
 
 # **Testing Accounts**
 
-**Username**: **Creatanator**
-**Password**: **create**
+**Username**: _Creatanator_ <br />
+**Password**: _create_
 
 Purpose for this account is to show the functionality of the stats menu for created quests, and showcase the deletion of quests.
 
@@ -53,16 +53,16 @@ User can register as long as their postal code begins with an A, to cut down on 
 
   ** Many more functionalities to come! Current version cut due to time constraints and skill **
 
-# **Photo Credits**
+# _Photo Credits_
 
-(_Sign In background_: Jonathan Ivany) <br />
-(_How To Picture_: Tyler Stuckless) <br />
-(_Create An Account Background_: Tyler Stuckless) <br />
-(_Landing Page Background_: Jonathan Ivany) <br />
-(_Site Logo_: Jonathan Ivany) <br />
-(_Site Avatars_: Jonathan Ivany) <br />
+(**Sign In background**: Jonathan Ivany) <br />
+(**How To Picture**: Tyler Stuckless) <br />
+(**Create An Account Background**: Tyler Stuckless) <br />
+(**Landing Page Background**: Jonathan Ivany) <br />
+(**Site Logo**: Jonathan Ivany) <br />
+(**Site Avatars**: Jonathan Ivany) <br />
 
-# **Temporary placeholder images**
+# _Temporary placeholder images_
 
 (To be replaced with user images)
 
