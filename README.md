@@ -55,12 +55,12 @@ User can register as long as their postal code begins with an A, to cut down on 
 
 # **Photo Credits**
 
-(_Sign In background_: Jonathan Ivany)
-(_How To Picture_: Tyler Stuckless)
-(_Create An Account Background_: Tyler Stuckless)
-(_Landing Page Background_: Jonathan Ivany)
-(_Site Logo_: Jonathan Ivany)
-(_Site Avatars_: Jonathan Ivany)
+(_Sign In background_: Jonathan Ivany) <br />
+(_How To Picture_: Tyler Stuckless) <br />
+(_Create An Account Background_: Tyler Stuckless) <br />
+(_Landing Page Background_: Jonathan Ivany) <br />
+(_Site Logo_: Jonathan Ivany) <br />
+(_Site Avatars_: Jonathan Ivany) <br />
 
 # **Temporary placeholder images**
 
