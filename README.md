@@ -11,14 +11,14 @@ the job and the pay out is always GIVEN! No more getting hired for something and
 
 # 3. If Create An Account or Sign In doesn't work reload app
 
-# **Testing Accounts**
+# _Testing Accounts_
 
 **Username**: _Creatanator_ <br />
 **Password**: _create_
 
 Purpose for this account is to show the functionality of the stats menu for created quests, and showcase the deletion of quests.
 
-# **Functionalities**
+# _Functionalities_
 
 # Login Screen
 
