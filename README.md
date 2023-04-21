@@ -4,9 +4,8 @@ Jonathan Ivany <br />
 Tyler Stuckless<br />
 Alex Gillespie
 
-** The idea of NL QUEST is a bit far fetched and early stage idea but it's a take on to possibly fight the ever complicating job market, skip the resumes, the classes,
-basically, CUT THE CRAP!! Let who wants to do a job do it!! Their are hobbiests in nearly every field imaginable, these people are still required to get
-degrees useless pieces of paper or documents just to do something that may be completely unrelated. At NLQuest where users can create or accept jobs or tasks as "Quests"
+** The idea of NL QUEST is a bit far fetched and early stage idea but it's a take on to possibly fight the ever complicating job market, skip the resumes, the classes, let who wants to do a job do it!! Their are hobbiests in nearly every field imaginable, these people are still required to get
+degrees just to do something that may be completely unrelated. At NLQuest where users can create or accept jobs or tasks as "Quests"
 the job and the pay out is always GIVEN! No more getting hired for something and being made to do something else!!**
 
 # To Launch NL Quest
