@@ -23,7 +23,8 @@ the job and the pay out is always GIVEN! No more getting hired for something and
 **Password**: _create_
 
 Purpose for this account is to show the functionality of the stats menu for created quests, and showcase the deletion of quests.
-
+# CSS
+Thanks to Tyler Stuckless for the CSS for the quest cards for features, upcoming and user quests!
 # _Functionalities_
 
 # Login Screen
