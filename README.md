@@ -1,9 +1,3 @@
-# Final Sprint Group
-
-Jonathan Ivany <br />
-Tyler Stuckless<br />
-Alex Gillespie
-
 NLQuest is a website designed to facilitate quick job opportunities for individuals residing in Newfoundland and Labrador. The platform aims to eliminate the need for traditional resumes and offers a convenient way for people to earn money on-demand. By signing up on NLQuest, users can browse through various quick job listings and choose the ones that align with their skills and interests. The website provides a clear description of each job, including the expected tasks, duration, and the set reward or payout. This transparency allows users to fully understand what they are getting into and what they can expect to receive in return for completing the tasks. NLQuest serves as a platform for individuals to monetize their skills, knowledge, and available time, providing them with the flexibility to earn money as they need it.
 
 # To Launch NL Quest
