@@ -4,9 +4,7 @@ Jonathan Ivany <br />
 Tyler Stuckless<br />
 Alex Gillespie
 
-** The idea of NL QUEST is a bit far fetched and early stage idea but it's a take on to possibly fight the ever complicating job market, skip the resumes, the classes, let who wants to do a job do it!! Their are hobbiests in nearly every field imaginable, these people are still required to get
-degrees just to do something that may be completely unrelated. At NLQuest where users can create or accept jobs or tasks as "Quests"
-the job and the pay out is always GIVEN! No more getting hired for something and being made to do something else!!**
+NLQuest is a website designed to facilitate quick job opportunities for individuals residing in Newfoundland and Labrador. The platform aims to eliminate the need for traditional resumes and offers a convenient way for people to earn money on-demand. By signing up on NLQuest, users can browse through various quick job listings and choose the ones that align with their skills and interests. The website provides a clear description of each job, including the expected tasks, duration, and the set reward or payout. This transparency allows users to fully understand what they are getting into and what they can expect to receive in return for completing the tasks. NLQuest serves as a platform for individuals to monetize their skills, knowledge, and available time, providing them with the flexibility to earn money as they need it.
 
 # To Launch NL Quest
 
